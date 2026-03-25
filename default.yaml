@@ -57,8 +57,8 @@ data_cfg:
   val_images_root: root\GDRBench_AllowedShare
   test_images_root: root\GDRBench_AllowedShare
   train_data_file: root\GDRBench_AllowedShare\splits\target_APTOS_train.txt
-  val_data_file: root\GDRBench_AllowedShare\splits\DEEPDR_crossval.txt
-  test_data_file: root\GDRBench_AllowedShare\splits\DEEPDR_crossval.txt
+  val_data_file: root\GDRBench_AllowedShare\splits\APTOS_crossval.txt
+  test_data_file: root\GDRBench_AllowedShare\splits\APTOS_crossval.txt
   few_shot:
     num_shots: 0
   label_distributed_shift:
