@@ -5,7 +5,7 @@ import torch.nn as nn
 import torchvision.models as models
 from clip import clip
 
-from ordinalclip.utils import get_logger
+from clipdr.utils import get_logger
 
 from . import image_encoders
 from .builder import MODELS
