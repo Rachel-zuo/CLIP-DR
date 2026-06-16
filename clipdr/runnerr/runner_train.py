@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from torch import nn
 
 from clipdr.models import MODELS
-from clipdr.models.ordinalclip import CLIPDR
+from clipdr.models.CLIPDR import CLIPDR
 from clipdr.utils.logging import get_logger
 
 from .optim import build_lr_scheduler, build_optimizer, build_staged_lr_param_groups
@@ -429,7 +429,7 @@ class Runner(pl.LightningModule):
             logits_similarity_text2[index][2] = FC_matrix
             logits_similarity_text3[index][2] = FC_matrix
             logits_similarity_text3[index][1] = FB_matrix
-        device = 'cuda:0'
+        device = our_logits.device
         our_logits = our_logits.to(device)
         images_similarity1 = images_similarity1.to(device)
         images_similarity2 = images_similarity2.to(device)

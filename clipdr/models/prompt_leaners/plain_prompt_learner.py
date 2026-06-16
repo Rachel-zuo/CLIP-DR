@@ -6,7 +6,7 @@ import torch.nn as nn
 from clip import clip
 from clip.model import CLIP
 
-from ordinalclip.utils import get_logger
+from clipdr.utils import get_logger
 
 from .builder import PROMPT_LEARNERS
 
